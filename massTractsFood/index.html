@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Access Massachusetts</title>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+
+        <link rel="icon" type="image/x-icon" href="/images/avocado.ico">
+                <!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel='stylesheet' type='text/css'>
+   
+      
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    
+    
+<!-- Mass Food Stores -->
+<!-- <><><><><><><><><><><> -->
+
+        <div id="options">
+            <h2>Food Access in Massachusetts</h2>
+            <p><br>- Click on tract areas or hover over circles for details.
+                <br>
+                <br>- Zoom with scroll, click and drag to move the map.
+                <br>
+                <br>- Use the filters below to hide or show different types of food resources:
+                <br>
+            </p>
+            <div id="filters">
+              <input type="checkbox" class="type--option"  value="supermarket" checked id = "supermarket"> Supermarkets  <img src="images/croppedcircle2supermarket.png" alt="alt text" style="float:left; height:2vh; transform:translateY(1.6vh) "  > <br>
+              <input type="checkbox" class="type--option" value="restaurant" checked> Restaurants  <img src="images/croppedcircle2restaurant.png" alt="alt text" style="float:left; height:2vh; transform:translateY(1.6vh) "  ><br>
+              <input type="checkbox" class="type--option" value="convenience store" checked> Convenience stores  <img src="images/croppedcircle2conveniance.png" alt="alt text" style="float:left; height:2vh; transform:translateY(1.6vh)"  ><br>
+              <input type="checkbox" class="type--option" value="fast food" checked> Fast food <img src="images/croppedcircle2fastfood.png" alt="alt text" style="float:left; height:2vh ; transform:translateY(1.6vh)"  > <br>
+              <input type="checkbox" class="type--option" value="farmers market" checked> Farmer's markets <img src="images/croppedcircle2farmersmarket.png" alt="alt text" style="float:left; height:2vh; transform:translateY(1.6vh)"  > <br>
+                <img src="images/incomeLegend.png" alt="alt text" style="float:left; height:13vh; transform:translateY(4.6vh)"  >
+              </div>
+        </div>
+
+        <div id="chartmass"></div>
+        <script src="./massTracts.js"></script>
+
+
+
+    </body>
+</html>
+
+
+
+
